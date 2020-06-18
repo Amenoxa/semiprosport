@@ -1,0 +1,43 @@
+.contact {
+    background-size: cover;
+    min-height: 70vh;
+    display: grid;
+    flex-basis: 100%;
+    justify-content: center;
+    align-content: center;
+    padding-top: 10vh;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    @media (max-width: 400px){
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr 1fr 1fr;
+    }
+    &__title {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        margin: auto;
+        text-transform: uppercase;
+        text-justify: center;
+        padding: 25px auto;
+        @media (max-width: 400px){
+            grid-row: 1;
+            grid-column: 1;
+        }
+        @media (max-width: 735px){
+            font-size: 1.5rem;
+        }
+        @media (max-width: 485px){
+            font-size: 1.2rem;
+        }
+    }
+    &__item {
+        margin: 3rem auto;
+        justify-content: center;
+        padding: 20px;
+    }
+    &__subtitle {
+        margin: 20px auto 40px;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}

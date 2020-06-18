@@ -1,0 +1,37 @@
+.fizjo {
+    background: url(../img/background/xxx-bg.jpg) center fixed;
+    display: flex;
+    width: 100%;
+	padding: 0;
+	background-color: rgba(41, 40, 40, 0.836);
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+    -o-background-size: cover;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+    justify-content: flex-end;
+    
+      
+
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+        margin: auto;
+        margin-top: 100px;
+        max-height: 7vh;
+        color: #fff;
+        @media (max-width: 735px){
+            font-size: 1.5rem;
+            grid-row: 1;
+            grid-column: 1;
+        }
+        @media (max-width: 485px){
+            font-size: 1.2rem;
+        }
+    }
+    
+
+}
