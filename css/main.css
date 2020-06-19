@@ -71,9 +71,7 @@ hr {
 }
 
 .header__title {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  margin-top: 21vh;
   font-size: 4rem;
   color: rgba(211, 204, 204, 0.952);
   font-weight: 650;
@@ -94,11 +92,14 @@ hr {
 }
 
 .header__text {
+  margin-left: 10vw;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
   font-size: 2rem;
-  justify-items: flex-end;
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
-  margin-right: 20vw;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   color: rgba(218, 216, 216, 0.925);
   position: relative;
   z-index: +2;
@@ -108,7 +109,6 @@ hr {
   .header__text {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    justify-items: auto;
     margin: 10px;
     font-size: 1.2rem;
   }
