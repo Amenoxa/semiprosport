@@ -27,14 +27,16 @@
         display: flex;
         flex-basis: 75%;
         justify-content: space-evenly;
+        letter-spacing: 2.5px;
         @media (max-width: 810px){
+            letter-spacing: 2px;
             display: none;
             flex-basis: 100%;
             min-height: 10rem;
             background-color: rgba(3, 2, 8, 0.952);
             padding-top: 10px;
             padding-right: 10px;
-            margin-left: 60%;
+            margin-left: 30%;
             padding-left: 10px;
         }
     }
