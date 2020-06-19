@@ -71,7 +71,7 @@ hr {
 }
 
 .header__title {
-  margin-top: 21vh;
+  margin-top: 40vh;
   font-size: 4rem;
   color: rgba(211, 204, 204, 0.952);
   font-weight: 650;
@@ -142,6 +142,9 @@ canvas {
   width: 100%;
   background-color: rgba(22, 22, 22, 0.89);
   z-index: +2;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .menu__logo {
@@ -153,6 +156,7 @@ canvas {
   display: flex;
   float: left;
   overflow: hidden;
+  justify-self: flex-start;
 }
 
 @media (min-width: 1300px) {

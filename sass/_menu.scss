@@ -8,6 +8,7 @@
     width: 100%;
     background-color: rgba(22, 22, 22, 0.89);
     z-index: +2;
+    justify-content: space-between;
 
     &__logo {
         max-width: 10vw;
@@ -15,6 +16,7 @@
         display: flex;
         float: left;
         overflow: hidden;
+        justify-self: flex-start;
         @media (min-width: 1300px){
             max-width: 10vw;
         }
