@@ -150,7 +150,16 @@ canvas {
 }
 
 .menu__logo {
-  max-width: 10vw;
+  font-weight: 900;
+  padding-top: 10px;
+  max-width: 20vw;
+  position: relative;
+  padding-left: 10px;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  max-width: 20vw;
   -ms-flex-preferred-size: 10%;
       flex-basis: 10%;
   display: -webkit-box;
@@ -158,12 +167,12 @@ canvas {
   display: flex;
   float: left;
   overflow: hidden;
-  justify-self: flex-start;
 }
 
-@media (min-width: 1300px) {
+@media (max-width: 810px) {
   .menu__logo {
-    max-width: 10vw;
+    max-width: 50vw;
+    position: absolute;
   }
 }
 
@@ -177,7 +186,6 @@ canvas {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  letter-spacing: 2.5px;
 }
 
 @media (max-width: 810px) {
