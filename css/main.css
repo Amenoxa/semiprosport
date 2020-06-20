@@ -270,6 +270,9 @@ canvas {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 10vh;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  position: relative;
 }
 
 .about__title {
@@ -293,14 +296,20 @@ canvas {
   }
 }
 
+.about__main {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
 .about__text {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
-  background-color: rgba(206, 235, 236, 0.192);
+  position: relative;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   margin: 10px;
   padding: 15px;
   -ms-flex-item-align: start;
       align-self: flex-start;
+  text-align: justify;
 }
 
 @media (max-width: 735px) {
@@ -311,13 +320,196 @@ canvas {
 }
 
 .about__image {
+  display: block;
+}
+
+.about__carousel {
+  margin: 10px;
+  padding: 15px;
+  max-width: 300px;
+  float: right;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.about__img-desc {
+  text-align: center;
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+.about__partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin: 10px;
+  padding: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about__partners-title {
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
+  text-align: center;
+  font-weight: 600;
+}
+
+.about__partner-logo {
+  display: inline-block;
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
-  max-width: 400px;
-  max-height: 300px;
+}
+
+.about__overlay-animation {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.about__animation-circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.about__animation-circle {
+  position: absolute;
   display: block;
-  border-radius: 50%;
-  border: 10px solid rgba(255, 255, 255, 0.034);
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(108, 210, 218, 0.3);
+  -webkit-animation: animate 25s linear infinite;
+          animation: animate 25s linear infinite;
+  bottom: -150px;
+}
+
+.about__animation-circle:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.about__animation-circle:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+}
+
+.about__animation-circle:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.about__animation-circle:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: 18s;
+          animation-duration: 18s;
+}
+
+.about__animation-circle:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.about__animation-circle:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.about__animation-circle:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+
+.about__animation-circle:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+  -webkit-animation-duration: 45s;
+          animation-duration: 45s;
+}
+
+.about__animation-circle:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 35s;
+          animation-duration: 35s;
+}
+
+.about__animation-circle:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: 11s;
+          animation-duration: 11s;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: translateY(0) rotate(0deg);
+            transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-1000px) rotate(720deg);
+            transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: translateY(0) rotate(0deg);
+            transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-1000px) rotate(720deg);
+            transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
 }
 
 .motoryka {

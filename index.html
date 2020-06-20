@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" class="css">
     <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/main.css" class="css">
 
     <title>SemiproSPORT</title>
@@ -43,7 +45,29 @@
             </svg>
         </header>
         <section id="about" class="about">
+
+          <div class="about__overlay-animation" >
+            <ul class="about__animation-circles">
+                    <li class="about__animation-circle"></li>
+                    <li class="about__animation-circle"></li>
+                    <li class="about__animation-circle"></li>
+                    <li class="about__animation-circle"></li>
+                    <li class="about__animation-circle"></li>
+                    <li class="about__animation-circle"></li>
+                    <li class="about__animation-circle"></li>
+                    <li class="about__animation-circle"></li>
+                    <li class="about__animation-circle"></li>
+                    <li class="about__animation-circle"></li>
+            </ul>
+    </div >
+
             <h1 class="about__title">O NAS<hr></h1>
+            <div class="owl-carousel about__carousel">
+              <div><img src="img/about/FK.jpg" alt="" class="about__image"> <div class="a-over"> <p class="about__img-desc">Trener przygotowania motorycznego<br><b>Filip Kodym</b></p></div> </div>
+              <div><img src="img/about/MD.jpg" alt="" class="about__image"> <div class="a-over"> <p class="about__img-desc">Fizjoterapeuta<br>Trener personalny<br><b>Michał Madejowski</b></p></div> </div>
+              <div><img src="img/about/KS.jpg" alt="" class="about__image"> <div class="a-over"> <p class="about__img-desc">Fizjoterapeuta<br><b>Karol Nazwisko</b></p> </div></div>
+            </div>
+            <div class="about__main">
             <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quasi, optio dolore deleniti enim repellendus, iure atque 
                 id doloribus facere totam nostrum laudantium laborum velit, molestias veritatis modi quis incidunt.Iure quod dolorem mollitia accusamus consequatur, 
                 dolore facere voluptatibus vel sint, minus voluptate eius saepe nostrum, natus doloremque harum magni porro vero a enim incidunt. 
@@ -51,7 +75,15 @@
                 id doloribus facere totam nostrum laudantium laborum velit, molestias veritatis modi quis incidunt.Iure quod dolorem mollitia accusamus consequatur, 
                 dolore facere voluptatibus vel sint, minus voluptate eius saepe nostrum, natus doloremque harum magni porro vero a enim incidunt. 
                 Molestias autem dolorum quaerat aliquid.</p>
-            <img src="" alt="" class="about__image">
+                <div class="about__partners">
+                  <p class="about__partners-title">Nasi partnerzy:</p>
+                  <img class="about__partner-logo" src="img/about/km.png" alt="" srcset="">
+                  <img class="about__partner-logo" src="img/about/optyk.png" alt="optyk" srcset="">
+                </div>
+              </div>
+                
+                
+            
         </section>
         <section id="service1" class="motoryka">
           <svg class="motoryka__top" viewBox="0, 0, 1400, 100">
@@ -118,11 +150,13 @@
   }
 }
 </script>
+
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/typed.min.js"></script>
-<script src="js/main.js"></script>
 <script src="js/particles.min.js"></script>
 <script src="js/headerParticles.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
