@@ -90,6 +90,7 @@
     }
 
     &__animation-circle{
+        overflow: hidden;
         position: absolute;
         display: block;
         list-style: none;
@@ -175,6 +176,31 @@
         height: 150px;
         animation-delay: 0s;
         animation-duration: 11s;
+    }
+    &__links {
+        flex-basis: 90%;
+        text-align: center;
+        z-index: +1;
+    }
+    .fa {
+    text-align: center;
+    font-size: 24px;
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    margin-right: 20px;
+    background: rgba(223, 220, 220, 0);
+    color: #0e0b0a;
+    transition: all 0.3s;
+    &:hover {
+        background: #fcfcfc00;
+	    color: rgba(31, 140, 204, 0.719);
+    }
+    }
+    &__secondary {
+        text-align: justify;
+        flex-basis: 60%;
+        margin-bottom: 40px;
     }
 
 

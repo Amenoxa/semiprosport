@@ -30,6 +30,10 @@ hr {
   background-color: red;
 }
 
+body {
+  overflow: auto;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -381,6 +385,7 @@ canvas {
 }
 
 .about__animation-circle {
+  overflow: hidden;
   position: absolute;
   display: block;
   list-style: none;
@@ -480,6 +485,38 @@ canvas {
           animation-delay: 0s;
   -webkit-animation-duration: 11s;
           animation-duration: 11s;
+}
+
+.about__links {
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
+  text-align: center;
+  z-index: +1;
+}
+
+.about .fa {
+  text-align: center;
+  font-size: 24px;
+  width: 30px;
+  height: 30px;
+  padding: 7px;
+  margin-right: 20px;
+  background: rgba(223, 220, 220, 0);
+  color: #0e0b0a;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.about .fa:hover {
+  background: #fcfcfc00;
+  color: rgba(31, 140, 204, 0.719);
+}
+
+.about__secondary {
+  text-align: justify;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  margin-bottom: 40px;
 }
 
 @-webkit-keyframes animate {
