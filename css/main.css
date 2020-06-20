@@ -78,7 +78,7 @@ body {
   letter-spacing: 5px;
   font-weight: 800;
   margin-top: 40vh;
-  font-size: 4rem;
+  font-size: 8rem;
   color: rgba(211, 204, 204, 0.815);
   text-transform: uppercase;
   -ms-flex-preferred-size: 100%;
@@ -86,13 +86,36 @@ body {
   position: relative;
   text-align: center;
   z-index: +1;
+  color: #fafafaf1;
+  z-index: 1;
+  font-family: 'Teko', sans-serif;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+          animation: glow 2s ease-in-out infinite alternate;
 }
 
 @media (max-width: 999px) {
   .header__title {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    font-size: 2.5rem;
+    font-size: 5rem;
+  }
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 20px #e9eff0e5;
+  }
+  to {
+    text-shadow: 0 0 30px #d1e6e9, 0 0 10px #b7e2e7ec;
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 20px #e9eff0e5;
+  }
+  to {
+    text-shadow: 0 0 30px #d1e6e9, 0 0 10px #b7e2e7ec;
   }
 }
 
@@ -784,6 +807,12 @@ canvas {
       grid-template-rows: 1fr auto;
 }
 
+@media (max-height: 500px) {
+  .footer {
+    min-height: 30vh;
+  }
+}
+
 .footer__social {
   -ms-grid-row: 1;
   grid-row: 1;
@@ -814,6 +843,7 @@ canvas {
 }
 
 .fa {
+  line-height: inherit;
   text-align: center;
   font-size: 24px;
   width: 30px;
