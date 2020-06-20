@@ -1,7 +1,13 @@
 var doc = jQuery(document);
 
+$(window).on("load", function(){
+    $(".loader").fadeOut("slow");
+});
+
 doc.ready(function(){
     "use strict";
+
+    $(window).scrollTop(0);
 
     var typed = new Typed(".header__text", {
       strings: ['Profesjonalne podejście do sportu <b>Młodzieżowego</b>', 'Profesjonalne podejście do sportu <b>Amatorskiego</b>'],
