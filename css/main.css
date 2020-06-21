@@ -655,6 +655,13 @@ canvas {
   top: 0;
 }
 
+.motoryka__bottom {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
 .motoryka__bottom-right {
   position: absolute;
   width: 100%;
@@ -719,9 +726,11 @@ canvas {
       flex-wrap: wrap;
   position: relative;
   overflow: hidden;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .fizjo__title {
@@ -731,6 +740,9 @@ canvas {
   margin-top: 100px;
   max-height: 7vh;
   color: #fff;
+  margin-bottom: 40px;
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
 }
 
 @media (max-width: 735px) {
@@ -756,6 +768,13 @@ canvas {
   top: 0;
 }
 
+.fizjo__top {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
 .fizjo__top-right {
   position: absolute;
   width: 100%;
@@ -769,6 +788,41 @@ canvas {
   left: 0;
   bottom: 0;
   z-index: +1;
+}
+
+.fizjo__item {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  margin: 20px 20px;
+  padding: 10px 15px;
+  max-width: 350px;
+}
+
+.fizjo__subtitle {
+  color: white;
+  text-align: center;
+}
+
+.fizjo__description {
+  color: white;
+  text-align: justify;
+}
+
+.fizjo__image {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  max-width: 350px;
+  display: block;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-color: rgba(153, 205, 50, 0.212);
 }
 
 .trening {

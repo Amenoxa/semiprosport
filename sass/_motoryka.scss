@@ -41,6 +41,12 @@
         left: 0;
         top: 0;
     }
+    &__bottom {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+    }
     &__bottom-right{
         position: absolute;
         width: 100%;
