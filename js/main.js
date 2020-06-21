@@ -18,7 +18,6 @@ doc.ready(function(){
       loop: true
       });
 
-
       
 
 
@@ -45,4 +44,17 @@ $('.stop').on('click',function(){
     owl.trigger('stop.owl.autoplay')
 })
 
+$('.animation').each(function(){
 
+    var waypoint = new Waypoint({
+      element: this,
+      handler: function(direction) {
+        var cssvalue = $(this.element).attr('data-animation');
+
+        $(this.element).addClass("animated "+cssvalue);
+        $(this.element).css('opacity','1').fadeIn(2000);
+      },
+      offset: '70%'
+    })
+
+});

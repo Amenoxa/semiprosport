@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Teko:700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.css" class="css">
 
     <title>SemiproSPORT</title>
@@ -25,7 +26,7 @@
     <main class="wrapper">
         <nav class="menu" id="menu">
                 <a href="#header" class="menu__logo">SEMI<br>PRO</a>
-            <ul id="menuList" class="menu__list">
+            <ul id="menuList" class="menu__list" >
                 <li class="menu__item"><a href="#about" class="menu__link">o nas</a></li>
                 <li class="menu__item"><a href="#service1" class="menu__link">motoryka</a></li>
                 <li class="menu__item"><a href="#service2" class="menu__link">fizjoterapia</a></li>
@@ -68,13 +69,13 @@
             </ul>
     </div >
 
-            <h1 class="about__title">O NAS<hr></h1>
-            <div class="owl-carousel about__carousel">
+            <h1 class="about__title animation" data-animation="fadeIn">O NAS<hr></h1>
+            <div class="owl-carousel about__carousel animation" data-animation="fadeInLeft">
               <div><img src="img/about/FK.jpg" alt="" class="about__image"> <div class="a-over"> <p class="about__img-desc">Trener przygotowania motorycznego<br><b>Filip Kodym</b></p></div> </div>
               <div><img src="img/about/MD.jpg" alt="" class="about__image"> <div class="a-over"> <p class="about__img-desc">Fizjoterapeuta<br>Trener personalny<br><b>Michał Madejowski</b></p></div> </div>
               <div><img src="img/about/KS.jpg" alt="" class="about__image"> <div class="a-over"> <p class="about__img-desc">Fizjoterapeuta<br><b>Karol Nazwisko</b></p> </div></div>
             </div>
-            <div class="about__main">
+            <div class="about__main animation" data-animation="fadeInRight">
             <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quasi, optio dolore deleniti enim repellendus, iure atque 
                 id doloribus facere totam nostrum laudantium laborum velit, molestias veritatis modi quis incidunt.Iure quod dolorem mollitia accusamus consequatur, 
                 dolore facere voluptatibus vel sint, minus voluptate eius saepe nostrum, natus doloremque harum magni porro vero a enim incidunt. 
@@ -88,11 +89,11 @@
                   <img class="about__partner-logo" src="img/about/optyk.png" alt="optyk" srcset="">
                 </div>
               </div>
-              <p class="about__secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quasi, optio dolore deleniti enim repellendus, iure atque 
+              <p class="about__secondary animation" data-animation="zoomIn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quasi, optio dolore deleniti enim repellendus, iure atque 
                 id doloribus facere totam nostrum laudantium laborum velit, molestias veritatis modi quis incidunt.Iure quod dolorem mollitia accusamus consequatur, 
                 dolore facere voluptatibus vel sint, minus voluptate eius saepe nostrum, natus doloremque harum magni porro vero a enim incidunt. 
                 Molestias autem dolorum quaerat aliquid.</p>
-              <div class="about__links">
+              <div class="about__links animation" data-animation="zoomIn">
                 <a href="www.facebook.com" class="about__link"><i class="fa fa-facebook"></i></a>
                 <a href="" class="about__link"><i class="fa fa-twitter"></i></a>
                 <a href="" class="about__link"><i class="fa fa-google-plus"></i></a>
@@ -104,7 +105,7 @@
                 
             
         </section>
-        <section id="service1" class="motoryka">
+        <section id="service1" class="motoryka animation" data-animation="fadeInUpBig">
           <svg class="motoryka__top" viewBox="0, 0, 1400, 100">
             <polygon points="0,0 1400,0 1400,100 900,0 500,0 0,100 0,0" style="fill:white";>
           </svg>
@@ -174,6 +175,7 @@
 <script src="js/typed.min.js"></script>
 <script src="js/particles.min.js"></script>
 <script src="js/headerParticles.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
 

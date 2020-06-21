@@ -55,6 +55,10 @@ body {
           justify-content: center;
 }
 
+.animation {
+  opacity: 0%;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
