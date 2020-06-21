@@ -54,7 +54,7 @@ $('.animation').each(function(){
         $(this.element).addClass("animated "+cssvalue);
         $(this.element).css('opacity','1').fadeIn(3000);
       },
-      offset: '70%'
+      offset: '75%'
     })
 
 });
