@@ -689,7 +689,7 @@ canvas {
   border-color: rgba(153, 205, 50, 0.212);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 390px) {
   .motoryka__image {
     max-width: 300px;
   }
@@ -787,7 +787,7 @@ canvas {
   border-color: rgba(153, 205, 50, 0.212);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 390px) {
   .fizjo__image {
     max-width: 300px;
   }
