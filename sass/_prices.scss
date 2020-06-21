@@ -50,4 +50,10 @@
         max-width: 350px;
         padding-right: 5px;
     }
+
+    &__mobile-fix {
+        flex-basis: 80%;
+        margin: 20px 20px;
+        opacity: 0;
+    }
 }

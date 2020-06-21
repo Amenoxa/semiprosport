@@ -954,6 +954,13 @@ canvas {
   padding-right: 5px;
 }
 
+.prices__mobile-fix {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  margin: 20px 20px;
+  opacity: 0;
+}
+
 .contact {
   background-size: cover;
   min-height: 70vh;
