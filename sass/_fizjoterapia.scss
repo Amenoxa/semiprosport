@@ -26,11 +26,6 @@
         color: #fff;
         margin-bottom: 40px;
         flex-basis: 90%;
-        @media (max-width: 735px){
-            font-size: 1.5rem;
-            grid-row: 1;
-            grid-column: 1;
-        }
         @media (max-width: 485px){
             font-size: 1.2rem;
         }
@@ -68,6 +63,8 @@
     &__description {
         color: white;
         text-align: justify;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     &__image {
         justify-self: center;
@@ -79,5 +76,8 @@
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
         border-color: rgba(153, 205, 50, 0.212);
+        @media (max-width: 375px){
+            max-width: 300px;
+        }
     }
 }
