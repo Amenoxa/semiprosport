@@ -662,20 +662,6 @@ canvas {
   bottom: 0;
 }
 
-.motoryka__bottom-right {
-  position: absolute;
-  width: 100%;
-  right: 0;
-  bottom: 0;
-}
-
-.motoryka__bottom-left {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-}
-
 .motoryka__item {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -761,21 +747,7 @@ canvas {
   }
 }
 
-.fizjo__top-left {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
-
 .fizjo__top {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
-
-.fizjo__top-right {
   position: absolute;
   width: 100%;
   left: 0;

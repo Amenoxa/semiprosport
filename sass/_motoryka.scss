@@ -47,18 +47,7 @@
         left: 0;
         bottom: 0;
     }
-    &__bottom-right{
-        position: absolute;
-        width: 100%;
-        right: 0;
-        bottom: 0;
-    }
-    &__bottom-left{
-        position: absolute;
-        width: 100%;
-        left: 0;
-        bottom: 0;
-    }
+
     &__item {
         justify-content: center;
         justify-items: center;
