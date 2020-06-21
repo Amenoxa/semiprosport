@@ -1,5 +1,5 @@
 .fizjo {
-    background: url(../img/background/xxx-bg.jpg) center fixed;
+    background: url(../img/background/tren-bg.jpg) center fixed;
     display: flex;
     width: 100%;
 	padding: 0;
@@ -34,4 +34,25 @@
     }
     
 
+    &__top-left {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    &__top-right {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    &__bottom {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        z-index: +1;
+    }
 }

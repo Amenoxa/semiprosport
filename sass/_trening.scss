@@ -1,9 +1,8 @@
 .trening {
-    background: url(../img/background/tren-bg.jpg) center fixed;
     display: flex;
     width: 100%;
 	padding: 0;
-	background-color: rgba(41, 40, 40, 0.836);
+	background-color: rgb(255, 255, 255);
     -webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -22,7 +21,7 @@
         margin: auto;
         margin-top: 100px;
         max-height: 7vh;
-        color: #fff;
+        color: rgba(0, 0, 0, 0.945);
         @media (max-width: 735px){
             font-size: 1.5rem;
             grid-row: 1;
@@ -32,6 +31,7 @@
             font-size: 1.2rem;
         }
     }
+    
     
 
 }
