@@ -55,6 +55,10 @@
         margin: 20px 20px;
         padding: 10px 15px;
         max-width: 350px;
+        margin-bottom: 10vh;
+        @media (max-width: 450px){
+            margin-bottom: 0px;
+        }
     }
     &__subtitle {
         color: white;

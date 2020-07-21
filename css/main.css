@@ -760,6 +760,13 @@ canvas {
   margin: 20px 20px;
   padding: 10px 15px;
   max-width: 350px;
+  margin-bottom: 10vh;
+}
+
+@media (max-width: 450px) {
+  .fizjo__item {
+    margin-bottom: 0px;
+  }
 }
 
 .fizjo__subtitle {
@@ -946,7 +953,7 @@ canvas {
 .prices__image {
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
-  max-width: 350px;
+  max-width: 300px;
   padding-right: 5px;
 }
 
