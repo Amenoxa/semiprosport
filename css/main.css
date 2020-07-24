@@ -95,7 +95,7 @@ body {
   position: absolute;
   width: 100%;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   z-index: +1;
 }
 
@@ -642,14 +642,14 @@ canvas {
   position: absolute;
   width: 100%;
   left: 0;
-  top: 0;
+  top: -1px;
 }
 
 .motoryka__bottom {
   position: absolute;
   width: 100%;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
 }
 
 .motoryka__item {
@@ -671,7 +671,7 @@ canvas {
 
 .motoryka__description {
   color: white;
-  text-align: justify;
+  text-align: center;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -739,14 +739,14 @@ canvas {
   position: absolute;
   width: 100%;
   left: 0;
-  top: 0;
+  top: -1px;
 }
 
 .fizjo__bottom {
   position: absolute;
   width: 100%;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   z-index: +1;
 }
 
@@ -776,7 +776,7 @@ canvas {
 
 .fizjo__description {
   color: white;
-  text-align: justify;
+  text-align: center;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -888,7 +888,7 @@ canvas {
 }
 
 .trening__description {
-  text-align: justify;
+  text-align: center;
 }
 
 .trening__subtitle {
@@ -940,14 +940,14 @@ canvas {
   position: absolute;
   width: 100%;
   left: 0;
-  top: 0;
+  top: -1px;
 }
 
 .prices__bottom {
   position: absolute;
   width: 100%;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
 }
 
 .prices__image {
